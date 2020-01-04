@@ -5,10 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Landing Page</title>
-    <link type="text/css" href="css/index.css" rel="stylesheet" />
+    <link type="text/css" href="index.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/66d41fc68e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico"
+    />
+    <link
+      rel="mask-icon"
+      type=""
+      href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
+      color="#111"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png"
+    />
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+
   </head>
   <body>
-    <div>
+    <div class="container">
       <header id="header">
         <div class="logo">
           <img
@@ -20,7 +43,7 @@
         <nav id="nav-bar">
           <a href="#Features ">Features</a>
           <a href="#How It Works ">How It Works</a>
-          <a href="#Pricing ">Pricing</a>
+          <a href="#Pricing">Pricing</a>
         </nav>
       </header>
       <div class="heading-text">
@@ -40,31 +63,38 @@
       </div>
 
       <section class="top-content">
-        <div class="text">
-          <h2>Premium Materials</h2>
-          <p>
-            Our trombones use the shiniest brass which is sourced locally. This
-            will increase the longevity of your purchase.
-          </p>
-        </div>
-        <div class="icon"></div>
-
-        <div class="text">
-          <h2>Fast Shipping</h2>
-          <p>
-            We make sure you recieve your trombone as soon as we have finished
-            making it. We also provide free returns if you are not satisfied.
-          </p>
-        </div>
-        <div class="icon"></div>
-        <div class="text">
-          <h2>Quality Assurance</h2>
-          <p>
-            For every purchase you make, we will ensure there are no damages or
-            faults and we will check and test the pitch of your instrument.
-          </p>
-        </div>
-        <div class="icon"></div>
+        <section class="text-icon1">
+          <div class="text">
+            <h2>Premium Materials</h2>
+            <p>
+              Our trombones use the shiniest brass which is sourced locally.
+              This will increase the longevity of your purchase.
+            </p>
+          </div>
+          <div class="icon1"><i class="fa fa-3x fa-fire"></i></div>
+        </section>
+        <section class="text-icon2">
+          <div class="text">
+            <h2>Fast Shipping</h2>
+            <p>
+              We make sure you recieve your trombone as soon as we have finished
+              making it. We also provide free returns if you are not satisfied.
+            </p>
+          </div>
+          <div class="icon2"><i class="fa fa-3x fa-truck"></i></div>
+        </section>
+        <section class="text-icon3">
+          <div class="text">
+            <h2>Quality Assurance</h2>
+            <p>
+              For every purchase you make, we will ensure there are no damages
+              or faults and we will check and test the pitch of your instrument.
+            </p>
+          </div>
+          <div class="icon3">
+            <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+          </div>
+        </section>
       </section>
       <section class="video">
         <iframe
@@ -79,32 +109,51 @@
       </section>
 
       <section class="pricing">
-        <div class="tenor">
-          <h2>TENOR TROMBONE</h2>
-          <p>Lorem ipsum.</p>
-          <p>Lorem ipsum.</p>
-          <p>Lorem ipsum dolor.</p>
-          <p>Lorem ipsum.</p>
-          <button>SELECT</button>
+        <div class="tenor box">
+          <h2 class="pricing-header">TENOR TROMBONE</h2>
+          <div class="in-box">
+            <p class="dollar">$600</p>
+            <p>Lorem ipsum.</p>
+            <p>Lorem ipsum.</p>
+            <p>Lorem ipsum dolor.</p>
+            <p>Lorem ipsum.</p>
+            <button>SELECT</button>
+          </div>
         </div>
-        <div class="bass">
-          <h2>BASS TROMBONE</h2>
-          <p>Lorem ipsum.</p>
-          <p>Lorem ipsum.</p>
-          <p>Lorem ipsum dolor.</p>
-          <p>Lorem ipsum.</p>
-          <button>SELECT</button>
+        <div class="bass box">
+          <h2 class="pricing-header">BASS TROMBONE</h2>
+          <div class="in-box">
+            <p class="dollar">$900</p>
+            <p>Lorem ipsum.</p>
+            <p>Lorem ipsum.</p>
+            <p>Lorem ipsum dolor.</p>
+            <p>Lorem ipsum.</p>
+            <button>SELECT</button>
+          </div>
         </div>
-        <div class="valve">
-          <h2>VALVE TROMBONE</h2>
-          <p>Lorem ipsum.</p>
-          <p>Lorem ipsum.</p>
-          <p>Lorem ipsum dolor.</p>
-          <p>Lorem ipsum.</p>
-          <button>SELECT</button>
+        <div class="valve box">
+          <h2 class="pricing-header">VALVE TROMBONE</h2>
+          <div class="in-box">
+            <p class="dollar">$1200</p>
+            <p>Lorem ipsum.</p>
+            <p>Lorem ipsum.</p>
+            <p>Lorem ipsum dolor.</p>
+            <p>Lorem ipsum.</p>
+            <button>SELECT</button>
+          </div>
         </div>
       </section>
-      <footer></footer>
+      <footer>
+        <div class="footer-info">
+          <p>Privacy</p>
+          <p>Terms</p>
+          <p>Contact</p>
+        </div>
+        <div class="copyright">
+          <p>Copyright 2016</p>
+          <p>Original Trombones</p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
